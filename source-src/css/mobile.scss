@@ -295,6 +295,13 @@ html, body, #container {
     .footer-right{
         float: initial;
     }
+    .yiyan{
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        height: 20px;
+        margin: 0 auto;
+    }
 }
 
 #mobile-nav{
@@ -305,7 +312,7 @@ html, body, #container {
         color: #424242;
     }
 	.overlay{
-		height: 110px;
+		height: 135px;
 		position: absolute;
 		width: 100%;
         z-index: 2;

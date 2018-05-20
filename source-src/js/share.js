@@ -69,7 +69,7 @@ let init = function() {
             })
         }
     })
-
+    
     document.querySelector('.mask').onclick = hideWX
     document.querySelector('.js-modal-close').onclick = hideWX
 }

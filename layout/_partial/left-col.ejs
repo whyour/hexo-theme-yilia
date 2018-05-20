@@ -1,5 +1,5 @@
-<% var defaultBg = '#4d4d4d'; %>
-<div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>"></div>
+<% var defaultBg = 'url("/uploads/img-m.jpg") -26px center'; %>
+<div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;background-size: cover"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="<%=theme.root%>" class="profilepic">
@@ -9,7 +9,10 @@
 		  <h1 class="header-author"><a href="<%=theme.root%>"><%=theme.author%></a></h1>
 		</hgroup>
 		<% if (theme.subtitle){ %>
+		<!-- <script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script> -->
+		<!-- <p class="header-subtitle"><script>lwlhitokoto()</script></p> -->
 		<p class="header-subtitle"><%=theme.subtitle%></p>
+		
 		<%}%>
 
 		<nav class="header-menu">

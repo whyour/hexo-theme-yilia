@@ -9,7 +9,7 @@ var backTop = function (domE, ctn, distance) {
     }, 100);
     domE.onclick = function () {
         typeof _onclick === 'function' && _onclick.apply(this, arguments);
-        var baseCt = ctn.scrollTop || document.documentElement.scrollTop || document.body.scrollTop;
+        // var baseCt = ctn.scrollTop || document.documentElement.scrollTop || document.body.scrollTop;
         timer = setInterval(function () { //设置一个计时器
             var ct = ctn.scrollTop || document.documentElement.scrollTop || document.body.scrollTop; //获取距离顶部的距离
             var diff = Math.max(10, ct / 6);
@@ -38,6 +38,25 @@ var backTop = function (domE, ctn, distance) {
             }, wait);
         }
     }
+
+    //subtile diy
+	// function diySubtile() {
+	// 	// setTimeout(function(){
+	// 		window.fetch('https://api.ninesix.cc/yiyan', {
+	// 			method: 'get',
+	// 		})
+	// 		.then((res) => {
+	// 			return res.json()
+	// 		})
+	// 		.then((data,status) => {
+	// 			console.log('im here=====');
+	// 			document.querySelector('#header').querySelector('.yiyan').setAttribute('title',data.data.from+"|"+data.data.creator);
+	// 			document.querySelector('#header').querySelector('.yiyan').innerHTML = data.data.content;
+	// 		})
+	// 	// })
+    // }
+    // diySubtile();
+    
 };
 
 function init() {

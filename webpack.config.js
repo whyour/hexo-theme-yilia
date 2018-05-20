@@ -2,7 +2,7 @@ var webpack = require("webpack");
 var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CleanPlugin = require('clean-webpack-plugin');
+var cleanupPlugin = require('webpack-cleanup-plugin');
 
 // 模板压缩
 // 详见：https://github.com/kangax/html-minifier#options-quick-reference
@@ -56,6 +56,9 @@ module.exports = {
     return [autoprefixer];
   },
   plugins: [
+    new cleanupPlugin({
+      exclude: ["fonts/*.*", "img/*.*"],
+    }),
     new ExtractTextPlugin('[name].[chunkhash:6].css'),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
@@ -91,7 +94,6 @@ if (process.env.NODE_ENV === 'production') {
         warnings: false
       }
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new CleanPlugin('builds')
+    new webpack.optimize.OccurenceOrderPlugin()
   ])
 }

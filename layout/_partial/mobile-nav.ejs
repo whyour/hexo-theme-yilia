@@ -1,6 +1,6 @@
-<% var defaultBg = '#4d4d4d'; %>
+<% var defaultBg = 'url("/uploads/img-m.jpg") 0px center'; %>
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>"></div>
+  	<div class="overlay js-overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;background-size: cover"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -12,8 +12,10 @@
 			<hgroup>
 			  <h1 class="header-author js-header-author"><%=theme.author%></h1>
 			</hgroup>
+			<!-- <script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script> -->
 			<% if (theme.subtitle){ %>
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i><%=theme.subtitle%><i class="icon icon-quo-right"></i></p>
+			<!-- <p class="header-subtitle"><i class="icon icon-quo-left"></i><script>lwlhitokoto()</script><i class="icon icon-quo-right"></i></p> -->
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i><%=theme.subtitle%><i class="icon icon-quo-right"></i></p>			
 			<% } %>
 			<% var count = 0%>
 			<% for (var i in theme.menu){ %>

@@ -1,13 +1,14 @@
 <% var defaultBg = 'url("/uploads/img-m.jpg") 0px center'; %>
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;background-size: cover"></div>
+	<!-- <div class="overlay js-overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>;background-size: cover"></div> -->
+	<div class="overlay js-overlay"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="<%=theme.avatar%>" class="js-avatar">
+				<img src="<%=theme.avatar%>" alt='avatar' class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"><%=theme.author%></h1>
@@ -26,7 +27,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					<% for (var i in theme.subnav){ %>
-						<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><i class="icon-<%= i %>"></i></a>
+						<a class="<%= i %>" rel="noopener" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><i class="icon-<%= i %>"></i></a>
 			        <%}%>
 				</div>
 			</nav>

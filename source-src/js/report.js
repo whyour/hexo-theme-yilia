@@ -86,12 +86,14 @@ function regSW() {
                             return;
                         }
 
-                        navigator.serviceWorker.controller.postMessage({type: 'notify', info: e.data.info}, [channel.port2]);
+                        if(navigator.serviceWorker.controller)
+                            navigator.serviceWorker.controller.postMessage({type: 'notify', info: e.data.info}, [channel.port2]);
                     });
                 }
             }
 
-            navigator.serviceWorker.controller.postMessage('hello', [channel.port2]);
+            if(navigator.serviceWorker.controller)            
+                navigator.serviceWorker.controller.postMessage('hello', [channel.port2]);
         });
 
         // 掉线通知示例

@@ -39,7 +39,8 @@ function init() {
 			items: [],
 			jsonFail: false,
 			showTags: false,
-			search: ''
+			search: '',
+			isComplete: false
 		},
 	    methods: {
 	    	stop: (e) => {
@@ -151,6 +152,26 @@ function init() {
 	}).catch((err) => {
 		app.$set('jsonFail', true)
 	});
+
+	//subtile diy
+	function diySubtile() {
+		app.$set('isComplete', false)
+        window.fetch('https://api.ninesix.cc/yiyan', {
+            method: 'get',
+        })
+        .then((res) => {
+            return res.json()
+        })
+        .then((data,status) => {
+            console.log('wh-y-our');
+            document.querySelector('.yan').setAttribute('title',data.data.from+"|"+data.data.creator);
+			document.querySelector('.yan').innerHTML = data.data.content;
+			document.querySelector('.yans').setAttribute('title',data.data.from+"|"+data.data.creator);
+			document.querySelector('.yans').innerHTML = data.data.content;
+			app.$set('isComplete', true);
+        })
+    }
+    diySubtile();
 
 	// 隐藏
 	document.querySelector('#container').onclick = (e) => {

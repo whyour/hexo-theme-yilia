@@ -12,7 +12,13 @@
 	}
 }
 .footer-left{
-  float: left;
+	float: left;
+	.yiyan {
+		display: none;			
+		&.show {
+			display: block;
+		}
+	}
 }
 .footer-right{
   float: right;

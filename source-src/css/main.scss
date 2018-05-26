@@ -24,3 +24,23 @@
   @import "./mobile";
   @import "./mobile-slider";
 }
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+  #footer {
+    position: relative;
+    bottom: 0;
+    .footer-left{
+        float: initial;
+        margin-bottom: 10px;
+    }
+    .footer-right{
+        float: initial;
+    }
+    .yiyan{
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        height: 20px;
+        margin: 0 auto;
+    }
+  } 
+}

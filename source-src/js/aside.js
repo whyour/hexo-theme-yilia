@@ -38,25 +38,6 @@ var backTop = function (domE, ctn, distance) {
             }, wait);
         }
     }
-
-    //subtile diy
-	// function diySubtile() {
-	// 	// setTimeout(function(){
-	// 		window.fetch('https://api.ninesix.cc/yiyan', {
-	// 			method: 'get',
-	// 		})
-	// 		.then((res) => {
-	// 			return res.json()
-	// 		})
-	// 		.then((data,status) => {
-	// 			console.log('im here=====');
-	// 			document.querySelector('#header').querySelector('.yiyan').setAttribute('title',data.data.from+"|"+data.data.creator);
-	// 			document.querySelector('#header').querySelector('.yiyan').innerHTML = data.data.content;
-	// 		})
-	// 	// })
-    // }
-    // diySubtile();
-    
 };
 
 function init() {

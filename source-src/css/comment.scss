@@ -8,3 +8,9 @@
 		border-bottom: 1px dashed #c8c8c8 !important;
 	}
 }
+
+@media screen and (max-width: 800px) {
+	#comments {
+		padding: 0 !important;
+	}
+}

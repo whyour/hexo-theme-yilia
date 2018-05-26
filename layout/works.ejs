@@ -32,7 +32,7 @@
                             <p class="text-muted"> <%- site.data.project[obj].direction %> </p>
                         </div>
                         <div class="footer clearfix">
-                            <a class=" btn btn-default" href="<%= site.data.project[obj].link %>" target="_blank">打开</a>
+                            <a class=" btn btn-default" href="<%= site.data.project[obj].link %>" rel="noopener" target="_blank">打开</a>
                         </div>
                     </div>
                     <% } %>
@@ -41,3 +41,6 @@
         </div>
     </article>
 </div>
+<%- partial('_partial/post/gitment', {
+    key: 'works',
+  }) %>

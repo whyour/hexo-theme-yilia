@@ -1,6 +1,5 @@
 #header .header-nav{
     width: 100%;
-    position: absolute;
     transition: transform .3s ease-in;
     .social {
         margin-top: 10px;
@@ -27,6 +26,7 @@
             &:hover {
                 opacity:1
             }
+            text-shadow: none;
         }
         a.weibo {
             background: #aaaaff;

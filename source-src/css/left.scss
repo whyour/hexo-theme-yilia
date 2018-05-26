@@ -1,5 +1,6 @@
 .left-col {
-	background: #fff;
+	// background: #fff;
+	background: url('./img/bg.jpg') no-repeat #020000;
 	width: 300px;
 	position:fixed;
 	opacity:1;
@@ -18,32 +19,34 @@
 	.intrude-less {
 		width: 76%;
 		text-align: center;
-		margin: 112px auto 0;
+		margin: 75px auto 0;
 	}
 
 	#header{
 		width:100%;
-		height: 300px;
 		position: relative;
 		border-bottom: 1px solid color-border;
 		a {
-			color: #696969;
+			color: #fff;
+			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);
 			&:hover {
 				color: #B0A0AA;
 			}
 		}
 		.header-subtitle{
 			text-align: center;
-			color:#999;
+			color:#fff;
+			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);			
 			font-size: 14px;
 			line-height: 25px;
 			overflow: hidden;
 			text-overflow: ellipsis;
-			display: -webkit-box;
-			-webkit-line-clamp: 2;
-			-webkit-box-orient: vertical;
+			// display: -webkit-box;
+			line-clamp: 2;
+			box-orient: vertical;
 		}
 		.header-menu{
+			margin-top: 15px;
 			font-weight: 300;
 			line-height: 31px;
 			text-transform: uppercase;
@@ -111,6 +114,34 @@
 			font-family: Roboto, "Roboto", serif;
 			font-size: 30px;
 			transition: 0.3s;
+		}
+	}
+	.header-yiyan {
+		width: 100%;
+		padding: 20px;
+		display: none;
+		&.show {
+			display: block;
+		}
+		.yiyan {
+			width: 100%;
+			.yan {
+				color: #fff;
+				font-size: 12px;				
+				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);    				
+			}
+			p {
+				width: 100%;
+				color: #fff;
+				font-size: 12px;								
+				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);
+				&:first-child {
+					text-align: left;
+				}
+				&:last-child {
+					text-align: right;
+				}
+			}
 		}
 	}
 }

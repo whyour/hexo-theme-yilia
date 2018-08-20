@@ -9,8 +9,48 @@
 	}
 }
 
+#isso-thread {
+	overflow: hidden;
+	#isso-root {
+		clear: both;
+	}
+	>h4, .isso-postbox {
+		margin: 0 30px;
+	}
+	#isso-root>div {
+		margin: 0 30px;
+	}
+	#isso-root .isso-comment, .isso-postbox {
+		max-width: none;
+	}
+	.isso-comment > div.avatar {
+		width: 50px;
+	}
+	.textarea {
+		min-height: 90px;
+	}
+}
+
+.disqus-api {
+	margin: 0 30px;
+	#disqus_thread {
+		padding: 0!important;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	#comments {
 		padding: 0 !important;
+	}
+	#isso-thread {
+		>h4, .isso-postbox {
+			margin: 0;
+		}
+		#isso-root>div {
+			margin: 0;
+		}
+	}
+	.disqus-api {
+		margin: 0 10px;
 	}
 }

@@ -157,4 +157,34 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
+
+  <% if (theme.isso){ %>
+    <section id="comments">
+      <section id="isso-thread"></section>
+      <script data-isso="https://ninesix.cc/isso/"
+        data-isso-css="true"
+        data-isso-lang="en"
+        data-isso-reply-to-self="false"
+        data-isso-require-author="true"
+        data-isso-require-email="true"
+        data-isso-max-comments-top="10"
+        data-isso-max-comments-nested="5"
+        data-isso-reveal-on-click="5"
+        data-isso-avatar="true"
+        data-isso-avatar-bg="#f0f0f0"
+        data-isso-avatar-fg="#9abf88 #5698c4 #e279a3 #9163b6 ..."
+        data-isso-vote="true"
+        data-vote-levels=""
+        src="https://ninesix.cc/isso/js/embed.min.js"></script>
+    </section>
+  <% } %>
+
+  <% if (theme.disqusapi.enable){ %>
+    <%- partial('post/disqus-api', {
+      key: post.slug,
+      title: post.title,
+      url: config.url+url_for(post.path)
+    }) %>
+  <% } %>
+
 <% } %>

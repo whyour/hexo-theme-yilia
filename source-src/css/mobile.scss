@@ -141,6 +141,9 @@ html, body, #container {
         float: left;
         margin: 6px 4px 0 0;
     }
+    .icon-circle-left {
+        margin: 6px 4px 0 0;
+    }
 }
 .article{
     padding: 10px;
@@ -241,9 +244,9 @@ html, body, #container {
 #article-nav .article-nav-link-wrap .article-nav-title {
     font-size: 16px;
     width: 90%;
-    width:-moz-calc(100% - 20px); 
-    width:-webkit-calc(100% - 20px); 
-    width: calc(100% - 20px);
+    width:-moz-calc(100% - 25px); 
+    width:-webkit-calc(100% - 25px); 
+    width: calc(100% - 25px);
 }
 
 #page-nav .extend{

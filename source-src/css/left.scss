@@ -1,6 +1,7 @@
 .left-col {
 	// background: #fff;
-	background: url('./img/bg.jpg') no-repeat #020000;
+	background: url('./img/bg.jpg') no-repeat #c7c7c7 center;
+	background-size: cover;
 	width: 300px;
 	position:fixed;
 	opacity:1;
@@ -28,7 +29,7 @@
 		border-bottom: 1px solid color-border;
 		a {
 			color: #fff;
-			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);
+			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);
 			&:hover {
 				color: #B0A0AA;
 			}
@@ -36,7 +37,7 @@
 		.header-subtitle{
 			text-align: center;
 			color:#fff;
-			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);			
+			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);			
 			font-size: 14px;
 			line-height: 25px;
 			overflow: hidden;
@@ -122,19 +123,22 @@
 		display: none;
 		&.show {
 			display: block;
+			position: absolute;
+			left: 0;
+			margin-top: 100px;
 		}
 		.yiyan {
 			width: 100%;
 			.yan {
 				color: #fff;
 				font-size: 12px;				
-				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);    				
+				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);    				
 			}
 			p {
 				width: 100%;
 				color: #fff;
 				font-size: 12px;								
-				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.32);
+				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);
 				&:first-child {
 					text-align: left;
 				}

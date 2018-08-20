@@ -10,7 +10,7 @@ menu:
 
 # SubNav
 subnav:
-  github: "https://github.com/w-nba"
+  github: "https://github.com/whyour"
   #weibo: "#"
   rss: /atom.xml
   #zhihu: "#"
@@ -23,7 +23,7 @@ subnav:
   #acfun: "#"
   mail: "mailto:wangpengwnba@126.com"
   #facebook: "#"
-  google: "112887490923160312595"
+  #google: "112887490923160312595"
   #twitter: "#"
   #linkedin: "#"
 
@@ -38,10 +38,10 @@ root: /
 
 auto_excerpt:
     enable: true
-    lines: 5
+    lines: 3
 
 # 文章太长，截断按钮文字
-excerpt_link: more
+excerpt_link: 查看更多
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
@@ -107,7 +107,7 @@ gitment_oauth:
 
 # Valine Comment system. https://valine.js.org
 valine:
-  enable: true # 如果你想使用valine，请将值设置为 true
+  enable: false # 如果你想使用valine，请将值设置为 true
   appId: QFRlTDA90AaBrRPlTfDpK28M-gzGzoHsz # your leancloud appId
   appKey: 54swobfsY14YC1hix74N38Wi # your leancloud appKey
   notify: false # Mail notify
@@ -121,6 +121,16 @@ valine:
 # Hyper Comments support. Write your id here, or false to disable
 hyper_id: false
 
+isso: false
+
+disqusapi:
+  enable: true
+  forum: 'whyour'
+  site: 'https://ninesix.cc'
+  api: 'https://disqus.ninesix.cc'
+  mode: 1
+  badge: '博主'
+  timeout: 3000
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色

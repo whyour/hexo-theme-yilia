@@ -14,8 +14,12 @@
 	}
 </script>
 
-<%- partial('script') %>
+<%- fragment_cache('script', function(){
+    return partial('script');
+}) %>
 
 <% if (theme.mathjax){ %>
-<%- partial('mathjax') %>
+<%- fragment_cache('mathjax', function(){
+    return partial('mathjax');
+}) %>
 <% } %>

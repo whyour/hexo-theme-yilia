@@ -123,7 +123,11 @@ html, body, #container {
     min-height: 40px;
     padding-top: 10px;
     margin: 0;
-    border-top: 1px solid #ddd;
+    // border-top: 1px solid #ddd;
+    .article-tag.tagcloud {
+        overflow: hidden;
+        float: none;
+    }
 }
 .article-info-post.article-info{
     margin: 0;
@@ -153,12 +157,13 @@ html, body, #container {
     color: #555;
     .article-more-link {
         margin: 0;
+        margin-top: 5px;
     }
     .article-entry{
         padding: 10px 0 30px 0;
     }
     .article-inner h1.article-title, .article-title{
-        font-size: 18px;
+        font-size: 21px;
         font-weight: 300;
         display: block;
         margin: 0;

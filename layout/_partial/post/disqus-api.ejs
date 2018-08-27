@@ -51,15 +51,18 @@
         title: '得意',
         unicode: '1f60f'
     }];
-    var disq = new iDisqus('comments', {
-        forum: "<%= theme.disqusapi.forum %>",
-        site: "<%= theme.disqusapi.site %>",
-        api: "<%= theme.disqusapi.api %>",
-        mode: "<%= theme.disqusapi.mode %>",
-        badge: "<%= theme.disqusapi.badge %>",
-        timeout: "<%= theme.disqusapi.timeout %>",
-        init: true,
-        emoji_list: emojiList
-    });
-    disq.count();
+    setTimeout(function(){
+        var disq = new iDisqus('comments', {
+            forum: "<%= theme.disqusapi.forum %>",
+            site: "<%= theme.disqusapi.site %>",
+            api: "<%= theme.disqusapi.api %>",
+            mode: "<%= theme.disqusapi.mode %>",
+            badge: "<%= theme.disqusapi.badge %>",
+            timeout: "<%= theme.disqusapi.timeout %>",
+            init: true,
+            emoji_list: emojiList
+        });
+        disq.count();
+        disq.popular();
+    })
 </script>

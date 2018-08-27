@@ -1,0 +1,16 @@
+<% if(theme.toc){
+    var topic = toc(post.content, {
+        list_number: false
+        })
+    if(topic) {
+%>
+    <div id="toc-container"> 
+        <div id="toc"> 
+            <p> 
+                <strong>文章目录</strong>
+            </p>
+        <%- topic %>
+        </div>
+    </div>
+<% }
+} %>

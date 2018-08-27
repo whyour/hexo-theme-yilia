@@ -80,4 +80,17 @@ $zIndexFooter:                    2000 !default;
 $zIndexPopup:					  3000 !default;                     
 $zIndexOverlay:                   4000 !default; // 默认高于header和footer部分
 
-$articlePadding:				  7.6923%;
+$articlePadding:				  5%;
+$primaryTextColor: rgba(0,0,0, 0.87);
+$secondaryTextColor: rgba(0,0,0, 0.54);
+$headerH: 56px;
+
+$color-background: #eee;
+$color-main: #258fb8;
+$color-gray01: #666;
+$color-gray02: #999;
+$color-gray03: #ccc;
+$color-gray04: #ddd;
+$color-gray05: #fff;
+$color-sidebar: #3D4349;
+$opacity-sidebar: .3;

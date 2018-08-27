@@ -1,12 +1,18 @@
-<%- partial('_partial/head') %>
+<%- fragment_cache('head', function(){
+  return partial('_partial/head');
+}) %>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
-      <%- partial('_partial/left-col', null, {cache: !config.relative_link, complete: false}) %>
+      <%- fragment_cache('left-col', function(){
+        return partial('_partial/left-col');
+      }) %>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
-      <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+      <%- fragment_cache('mobile-nav', function(){
+        return partial('_partial/mobile-nav');
+      }) %>
       <div id="wrapper" class="body-wrap">
         <div class="menu-l">
           <div class="canvas-wrap">
@@ -17,11 +23,19 @@
           </div>
         </div>
       </div>
-      <%- partial('_partial/footer') %>
+      <%- fragment_cache('footer', function(){
+        return partial('_partial/footer');
+      }) %>
     </div>
-    <%- partial('_partial/after-footer') %>
-    <%- partial('_partial/tools') %>
-    <%- partial('_partial/viewer') %>
+    <%- fragment_cache('after-footer', function(){
+      return partial('_partial/after-footer');
+    }) %>
+    <%- fragment_cache('tools', function(){
+      return partial('_partial/tools');
+    }) %>
+    <%- fragment_cache('viewer', function(){
+      return partial('_partial/viewer');
+    }) %>
   </div>
 </body>
 </html>

@@ -161,6 +161,9 @@ html, body, #container {
     }
     .article-entry{
         padding: 10px 0 30px 0;
+        #toc-container, #toc {
+            display: none;
+        }
     }
     .article-inner h1.article-title, .article-title{
         font-size: 21px;

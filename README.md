@@ -2,11 +2,12 @@ hexo-theme-yilia
 ================
 
 Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
-崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。           
+崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](https://ninesix.cc/) 查看效果。           
  
 如果想体验手机浏览效果，可以扫一下二维码：
 
-![litten-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
+
+![ninesix-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
 
 —————————————————————
 
@@ -19,6 +20,9 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 5. 主题不支持IE6，7，8。以后也不会     
 
 **近期更新（2017.07.09）：**
+2018.09.01
+1.更新disqus-php-api,使disqus正常访问
+2.修改主题样式
 
 2017.07.09
 1. 返回顶部
@@ -77,7 +81,7 @@ git pull
 ## 四、配置
 
 主题配置文件在主目录下的`_config.yml`，请根据自己需要修改使用。
-完整配置例子，可以参考[我的博客备份](https://github.com/litten/BlogBackup)
+完整配置例子，可以参考[我的博客备份](https://github.com/whyour/blog.git)
 
 ```
 # Header

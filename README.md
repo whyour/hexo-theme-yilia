@@ -20,9 +20,10 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 5. 主题不支持IE6，7，8。以后也不会     
 
 **近期更新（2017.07.09）：**
+
 2018.09.01
-1.更新disqus-php-api,使disqus正常访问
-2.修改主题样式
+1. 更新disqus-php-api,使disqus正常访问
+2. 修改主题样式
 
 2017.07.09
 1. 返回顶部

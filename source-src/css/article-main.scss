@@ -93,6 +93,10 @@
   border-left: 5px solid #4d4d4d;
   padding: 20px 0px 5px 25px;
   padding-left: $articlePadding;
+  .post-count {
+    color: #969696;
+    font-size: 12px;
+  }
 }
 
 .article-meta{

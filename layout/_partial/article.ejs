@@ -6,6 +6,10 @@
         <% if (!post.noDate){ %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
         <% } %>
+        <% if (!index){ %>
+          </br>
+          <span class="post-count">本文总共<%= wordcount(post.content) %>字，阅读全文大约需要<%= min2read(post.content) %>分钟</span>
+        <% } %>
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">

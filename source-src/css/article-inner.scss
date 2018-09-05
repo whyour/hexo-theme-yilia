@@ -57,7 +57,8 @@
 .article-inner h4,
 .article-inner h5,
 .article-inner h6 {
-	font-weight: 900;
+  font-weight: 900;
+  overflow: hidden;
 }
 
 .article-inner h1:first-child,
@@ -70,7 +71,6 @@
 }
 
 .article-inner h1:first-child{
-  margin-bottom: 10px;
   display: inline;
 }
 .article-entry {
@@ -144,6 +144,7 @@
 
   p{
     margin-top: 10px;
+    overflow: hidden;
   }
   p code,li code{
     padding: 1px 3px;
@@ -153,6 +154,7 @@
     font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
     word-wrap: break-word;
     font-size: 14px;
+    overflow: hidden;
   }
   blockquote {
     background: #ddd;
@@ -165,9 +167,11 @@
       margin-top: 0;
       margin-bottom: 0;
     }
+    overflow: hidden;
   }
   em {
     font-style: italic;
+    overflow: hidden;
   }
   ul {
     li:before{
@@ -192,10 +196,13 @@
     }
   }
   ul,ol{
+    overflow: hidden;
     font-size: 14px;
     margin: 10px 0px;  
+    overflow: hidden;
   }
   li{
+    overflow: hidden;
     ul,ol{
       margin-left: 30px;
       li:before{
@@ -206,6 +213,7 @@
   }
   h1{
     margin-top: 30px;
+    overflow: hidden;
   }
   h2{
     margin-top: 20px;
@@ -213,6 +221,7 @@
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
   }
   h3,h4,h5,h6{
     margin-top: 20px;
@@ -220,17 +229,21 @@
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
   }
   video{
     max-width: 100%;
+    overflow: hidden;
   }
   strong {
     font-weight: bold;
+    overflow: hidden;
   }
   .caption{
     display: block;
     font-size: 0.8em;
     color: #aaa;
+    overflow: hidden;
   }
   hr{
     height: 0;
@@ -240,6 +253,7 @@
     border-right: 0;
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #FFF;
+    overflow: hidden;
   }
   pre {
     line-height: 1.5;
@@ -250,6 +264,7 @@
     border: 1px solid #ccc;
     text-shadow: 0 1px #444;
     font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    overflow: hidden;
     code{
       font-size: 14px;
     }
@@ -259,8 +274,10 @@
     border: 1px solid #dedede;
     margin: 15px 0;
     border-collapse:collapse;
+    overflow: hidden;
     tr,td{
       height:35px;
+      overflow: hidden;
     }
     thead{
       tr {
@@ -274,10 +291,12 @@
     }
     td,th{
       border: 1px solid #dedede;
+      overflow: hidden;
       padding: 0 10px;
     }
   }
   figure{
+    overflow: hidden;
     table {
       border: none;
       width: auto;

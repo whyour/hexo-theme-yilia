@@ -94,16 +94,16 @@
     border-color: rgb(226, 226, 226);
     border-image: initial;
 
-    ul , ol, > li{
-      list-style-type: disc;
+    ol ol ul, ol ul ul, ul ol ul, ol ol ol, ul ul ul {
+      list-style-type: square;
     }
 
     ul ul, ol ul, ul ol, ol, ol {
       list-style-type: circle;
     }
 
-    ol ol ul, ol ul ul, ul ol ul, ol ol ol, ul ul ul {
-      list-style-type: square;
+    ul , ol, > li{
+      list-style-type: disc;
     }
   }
 
@@ -196,13 +196,10 @@
     }
   }
   ul,ol{
-    overflow: hidden;
     font-size: 14px;
     margin: 10px 0px;  
-    overflow: hidden;
   }
   li{
-    overflow: hidden;
     ul,ol{
       margin-left: 30px;
       li:before{

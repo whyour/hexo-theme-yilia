@@ -102,7 +102,7 @@
       list-style-type: circle;
     }
 
-    ul:first-of-type , ol:first-of-type, > li{
+    > ul:first-of-type , > ol:first-of-type, > li{
       list-style-type: disc;
     }
   }

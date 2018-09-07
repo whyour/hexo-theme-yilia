@@ -78,6 +78,11 @@
   padding-right: $articlePadding;
   padding-left: $articlePadding;
 
+  #toc-container {
+    position: sticky;
+    top: 0;
+  }
+
   #toc-container, #toc {
     float: right;
     background: #fff;

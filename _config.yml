@@ -4,7 +4,7 @@ menu:
   主页: /
   摄影: /photos/
   归档: /archives/
-  诗词: /tags/诗词
+  诗词: /tags/poetry
   #javascript: /tags/Javascript
   #作品: /works/
 
@@ -55,9 +55,9 @@ reward_type: 0
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay:
 # 微信二维码图片地址
-weixin: 
+weixin:
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -134,7 +134,7 @@ disqusapi:
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header: 
+  header:
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 

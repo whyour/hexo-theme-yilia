@@ -128,8 +128,8 @@ disqusapi:
   forum: 'whyour'
   site: 'https://ninesix.cc'
   api: 'https://disqus.ninesix.cc'
-  timeout: 2000,
-  mode: 2,
+  timeout: 2000
+  mode: 2
   badge: '博主'
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:

@@ -29,7 +29,6 @@
 		border-bottom: 1px solid color-border;
 		a {
 			color: #fff;
-			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);
 			&:hover {
 				color: #B0A0AA;
 			}
@@ -37,7 +36,6 @@
 		.header-subtitle{
 			text-align: center;
 			color:#fff;
-			text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);			
 			font-size: 14px;
 			line-height: 25px;
 			overflow: hidden;
@@ -131,14 +129,12 @@
 			width: 100%;
 			.yan {
 				color: #fff;
-				font-size: 12px;				
-				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);    				
+				font-size: 12px;
 			}
 			p {
 				width: 100%;
 				color: #fff;
-				font-size: 12px;								
-				text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6);
+				font-size: 12px;
 				&:first-child {
 					text-align: left;
 				}

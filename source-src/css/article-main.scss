@@ -87,6 +87,9 @@
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+  &:hover{
+    color: #B0A0AA;
+  }
 }
 
 .article-header{

@@ -78,11 +78,19 @@
   padding-right: $articlePadding;
   padding-left: $articlePadding;
 
+  ul.post-copyright {
+    margin: 2em 0 0;
+    padding: 0.5em 1em;
+    border-left: 3px solid #ff1700;
+    background-color: #f9f9f9;
+    list-style: none;
+  }
+
   #toc-container, #toc {
     float: right;
     background: #fff;
   }
-  
+
   #toc {
     min-width: 120px;
     max-width: 260px;
@@ -111,12 +119,12 @@
     padding: 0px 4px;
     margin: 0px;
   }
-  
+
   #toc strong {
     display: block;
     border-bottom: 1px solid rgb(226, 226, 226);
   }
-  
+
   #toc ul, #toc ol {
     margin: 0.5em 0.5em 0.5em 1.5em;
     li {
@@ -197,7 +205,7 @@
   }
   ul,ol{
     font-size: 14px;
-    margin: 10px 0px;  
+    margin: 10px 0px;
   }
   li{
     ul,ol{

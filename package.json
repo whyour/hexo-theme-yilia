@@ -4,7 +4,7 @@
   "description": "a theme for hexo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack",
+    "dev": "webpack -w",
     "dist": "webpack -p"
   },
   "repository": {

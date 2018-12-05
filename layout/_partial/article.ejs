@@ -30,6 +30,20 @@
       <% } else { %>
         <%- partial('toc', { post: post}) %>
         <%- post.content %>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+              <strong>本文作者：</strong>
+              <a href="<%=theme.disqusapi.site%>"><%=theme.author%></a>
+          </li>
+          <li class="post-copyright-link">
+            <strong>本文链接：</strong>
+            <a href="<%= url_for(post.path) %>" title="<%= post.title %>">https:<%= post.permalink %></a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>版权声明：</strong>
+            本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！
+          </li>
+        </ul>
       <% } %>
 
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
@@ -101,7 +115,7 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
-  
+
   <% if (theme.wangyiyun){ %>
   <%- partial('post/wangyiyun', {
       key: post.slug,

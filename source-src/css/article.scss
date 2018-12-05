@@ -117,7 +117,6 @@
   border-left: 5px solid #4d4d4d;
   padding: 15px 0px 15px 25px;
 }
-
 .article-info.info-on-right{
   margin: 10px 0 0 0;
   float: right;
@@ -136,6 +135,13 @@
   line-height: 1.8em;
   padding-right: 30px;
   padding-left: 30px;
+  ul.post-copyright {
+    margin: 2em 0 0;
+    padding: 0.5em 1em;
+    border-left: 3px solid #ff1700;
+    background-color: #f9f9f9;
+    list-style: none;
+  }
   p{
     margin-top: 10px;
   }
@@ -178,7 +184,7 @@
   }
   ul,ol{
     font-size: 14px;
-    margin: 10px 0px;  
+    margin: 10px 0px;
   }
   li{
     ul,ol{

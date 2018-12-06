@@ -124,6 +124,7 @@
   margin-top: 0;
   text-align: left;
   float: right;
+  margin-bottom: 0!important;
   a{
     background: #4d4d4d;
     color: #fff;
@@ -147,9 +148,7 @@
 	float: right;
 }
 .article-info-index.article-info{
-	padding-top: 20px;
-	margin: 10px $articlePadding 0 $articlePadding;
-  min-height: 72px;
+	margin: 10px $articlePadding;
   // border-top: 1px solid #ddd;
 }
 .article-info-post.article-info{

@@ -149,7 +149,7 @@ slider:
 #smart_menu:
 #  friends: false
 smart_menu:
-  innerArchive: '所有文章'
+  innerArchive: '搜索'
   friends: '友链'
   aboutme: '关于我'
 

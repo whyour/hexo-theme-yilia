@@ -55,13 +55,17 @@
 }
 
 .article {
-  margin: 30px;
   position: relative;
-  border: 1px solid #ddd;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  // border: 1px solid #ddd;
+  // border-top: 1px solid #fff;
+  padding: 0 $articlePadding;
   background: #fff;
   transition: all 0.2s ease-in;
+  &:first-child {
+    > .article-inner {
+      border: none;
+    }
+  }
 /*   &.show{
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
@@ -93,9 +97,7 @@
 }
 
 .article-header{
-  border-left: 5px solid #4d4d4d;
-  padding: 20px 0px 5px 25px;
-  padding-left: $articlePadding;
+  padding: 10px 0px 5px;
   .post-count {
     color: #969696;
     font-size: 12px;
@@ -148,7 +150,7 @@
 	float: right;
 }
 .article-info-index.article-info{
-	margin: 10px $articlePadding;
+	margin: 10px 0;
   // border-top: 1px solid #ddd;
 }
 .article-info-post.article-info{

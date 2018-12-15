@@ -5,11 +5,11 @@
 }
 
 .article-inner {
-	border-color: #d1d1d1;
+  padding: 10px 0;
+  border-top: 1px dashed #666;
 }
 
 .article-inner h1 {
-	font-size: 28px;
 	font-size: 1.75rem;
 	line-height: 1.25;
 	margin-top: 2em;
@@ -72,11 +72,10 @@
 
 .article-inner h1:first-child{
   display: inline;
+  margin-bottom: 0;
 }
 .article-entry {
   line-height: 1.8em;
-  padding-right: $articlePadding;
-  padding-left: $articlePadding;
 
   ul.post-copyright {
     margin: 2em 0 0;

@@ -1,19 +1,19 @@
 #header .tagcloud a{
-    color:#fff; 
+    color:#fff;
 }
 .tagcloud{
     a{
-        display:inline-block;  
-        text-decoration:none;  
+        display:inline-block;
+        text-decoration:none;
         font-weight: normal;
-        font-size:10px;  
-        color:#fff;   
-        height:18px;  
-        line-height:18px;  
+        font-size:10px;
+        color:#fff;
+        height:18px;
+        line-height:18px;
         float: left;
-        padding:0 5px 0px 10px;  
-        position:relative;  
-        border-radius:0 5px 5px 0; 
+        padding:0 5px 0px 10px;
+        position:relative;
+        border-radius:0 5px 5px 0;
         margin: 5px 9px 5px 8px;
         font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
         &:hover{
@@ -28,46 +28,46 @@
             left: -18px;
             border: 9px solid transparent;
         }
-        &:after{  
-            content:" ";  
-            width:4px;  
-            height:4px;  
-            background-color:#fff;  
-            border-radius:4px;  
-            box-shadow:0px 0px 0px 1px rgba(0,0,0,.3);  
-            position:absolute;  
+        &:after{
+            content:" ";
+            width:4px;
+            height:4px;
+            background-color:#fff;
+            border-radius:4px;
+            box-shadow:0px 0px 0px 1px rgba(0,0,0,.3);
+            position:absolute;
             top: 7px;
             left: 2px;
-        }  
+        }
     }
     a.color1{
         background:  #FF945C;
         &:before{
-            border-right-color: #FF945C;  
+            border-right-color: #FF945C;
         }
     }
     a.color2{
         background:  #cc8167;
         &:before{
-            border-right-color: #cc8167;  
+            border-right-color: #cc8167;
         }
     }
     a.color3{
         background:  #BA8F6C;
         &:before{
-            border-right-color: #BA8F6C;  
+            border-right-color: #BA8F6C;
         }
     }
     a.color4{
         background: #94635c;
         &:before{
-            border-right-color:#94635c;  
+            border-right-color:#94635c;
         }
     }
     a.color5{
         background: #7B5D5F;
         &:before{
-            border-right-color:#7B5D5F;  
+            border-right-color:#7B5D5F;
         }
     }
 }
@@ -106,6 +106,9 @@
     color: #999;
     margin-right: $articlePadding;
     float: right;
+    time {
+      line-height: 36px;
+    }
     .icon {
         margin: 5px 5px 5px 0;
     }

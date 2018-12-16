@@ -151,7 +151,6 @@ html, body, #container {
 }
 .article{
     padding: 10px;
-    margin: 10px 0;
     border: 0;
     font-size: 16px;
     color: #555;
@@ -227,7 +226,7 @@ html, body, #container {
             }
         }
     }
-    
+
     #article-nav-older{
         float: none;
         display: block;
@@ -252,8 +251,8 @@ html, body, #container {
 #article-nav .article-nav-link-wrap .article-nav-title {
     font-size: 16px;
     width: 90%;
-    width:-moz-calc(100% - 25px); 
-    width:-webkit-calc(100% - 25px); 
+    width:-moz-calc(100% - 25px);
+    width:-webkit-calc(100% - 25px);
     width: calc(100% - 25px);
 }
 

@@ -141,11 +141,8 @@ html, body, #container {
     margin: 5px 0;
     display: block;
     clear: both;
-    .icon-circle-right {
+    .icon-circle-right, .icon-circle-left {
         float: left;
-        margin: 6px 4px 0 0;
-    }
-    .icon-circle-left {
         margin: 6px 4px 0 0;
     }
 }
@@ -245,12 +242,11 @@ html, body, #container {
     margin: 0;
     padding: 5px 10px 10px;
 }
-#article-nav #article-nav-older {
+#article-nav #article-nav-older, #article-nav #article-nav-newer {
     float: none;
 }
 #article-nav .article-nav-link-wrap .article-nav-title {
     font-size: 16px;
-    width: 90%;
     width:-moz-calc(100% - 25px);
     width:-webkit-calc(100% - 25px);
     width: calc(100% - 25px);

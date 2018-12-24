@@ -5,6 +5,9 @@
 }
 #article-nav .article-nav-link-wrap {
   font-size: 14px;
+  .icon-circle-right, .icon-circle-left {
+    padding-top: 2px;
+  }
 }
 #article-nav .article-nav-link-wrap .article-nav-title {
   display: inline-block;

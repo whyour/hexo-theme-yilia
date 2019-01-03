@@ -12,195 +12,199 @@
         <% } %>
       </header>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (index){ %>
-        <% if (post.excerpt) { %>
-          <%- post.excerpt %>
-        <% } else if (theme.auto_excerpt.enable) { %>
-          <% var br_position = 0 %>
-          <% for (var br_count = 0; br_count < theme.auto_excerpt.lines; br_count++) { %>
-              <% br_position = post.content.indexOf('\n',br_position + 1) %>
-              <% if(br_position < 0) { break } %>
-          <% } %>
-          <% if(br_position > 0) { %>
-              <% show_all_content = false %>
-              <p><%- post.content.substring(0, br_position + 1) %><p>
-          <% } %>
-        <% } %>
-      <% } else { %>
-        <%- partial('toc', { post: post}) %>
-        <%- post.content %>
-        <ul class="post-copyright">
-          <li class="post-copyright-author">
-              <strong>本文作者：</strong>
-              <a href="<%=theme.disqusapi.site%>"><%=theme.author%></a>
-          </li>
-          <li class="post-copyright-link">
-            <strong>本文链接：</strong>
-            <a href="<%= url_for(post.path) %>" title="<%= post.title %>">https:<%= post.permalink %></a>
-          </li>
-          <li class="post-copyright-license">
-            <strong>版权声明：</strong>
-            本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">署名 4.0 国际（CC BY 4.0）</a> 许可协议。转载请注明出处！
-          </li>
-        </ul>
-      <% } %>
+    <div class="article-content">
+      <div class="article-content-main">
+          <div class="article-entry" itemprop="articleBody">
+              <% if (index){ %>
+                <% if (post.excerpt) { %>
+                  <%- post.excerpt %>
+                <% } else if (theme.auto_excerpt.enable) { %>
+                  <% var br_position = 0 %>
+                  <% for (var br_count = 0; br_count < theme.auto_excerpt.lines; br_count++) { %>
+                      <% br_position = post.content.indexOf('\n',br_position + 1) %>
+                      <% if(br_position < 0) { break } %>
+                  <% } %>
+                  <% if(br_position > 0) { %>
+                      <% show_all_content = false %>
+                      <p><%- post.content.substring(0, br_position + 1) %><p>
+                  <% } %>
+                <% } %>
+              <% } else { %>
+                <%- post.content %>
+                <ul class="post-copyright">
+                  <li class="post-copyright-author">
+                      <strong>本文作者：</strong>
+                      <a href="<%=theme.disqusapi.site%>"><%=theme.author%></a>
+                  </li>
+                  <li class="post-copyright-link">
+                    <strong>本文链接：</strong>
+                    <a href="<%= url_for(post.path) %>" title="<%= post.title %>">https:<%= post.permalink %></a>
+                  </li>
+                  <li class="post-copyright-license">
+                    <strong>版权声明：</strong>
+                    本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">署名 4.0 国际（CC BY 4.0）</a> 许可协议。转载请注明出处！
+                  </li>
+                </ul>
+              <% } %>
 
-      <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i><%= theme.reward_wording%><i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    <% if(theme.alipay) {%>
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="<%= theme.alipay%>">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    <% } %>
-                    <% if(theme.weixin) {%>
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="<%= theme.weixin%>">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    <% } %>
+              <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
+                <div class="page-reward">
+                  <a href="javascript:;" class="page-reward-btn tooltip-top">
+                    <div class="tooltip tooltip-east">
+                    <span class="tooltip-item">
+                      赏
+                    </span>
+                    <span class="tooltip-content">
+                      <span class="tooltip-text">
+                        <span class="tooltip-inner">
+                          <p class="reward-p"><i class="icon icon-quo-left"></i><%= theme.reward_wording%><i class="icon icon-quo-right"></i></p>
+                          <div class="reward-box">
+                            <% if(theme.alipay) {%>
+                            <div class="reward-box-item">
+                              <img class="reward-img" src="<%= theme.alipay%>">
+                              <span class="reward-type">支付宝</span>
+                            </div>
+                            <% } %>
+                            <% if(theme.weixin) {%>
+                            <div class="reward-box-item">
+                              <img class="reward-img" src="<%= theme.weixin%>">
+                              <span class="reward-type">微信</span>
+                            </div>
+                            <% } %>
+                          </div>
+                        </span>
+                      </span>
+                    </span>
                   </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      <% } %>
-    </div>
-    <div class="article-info article-info-index">
-      <%if(post.top){%>
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      <% } %>
-      <%- partial('post/tag') %>
-      <%- partial('post/category') %>
-      <% if (index && theme.show_all_link){ %>
-        <p class="article-more-link">
-          <a class="article-more-a" href="<%- url_for(post.path) %>"><%= theme.show_all_link %> >></a>
-        </p>
-      <% } %>
+                  </a>
+                </div>
+              <% } %>
+            </div>
+          <div class="article-info article-info-index">
+              <%if(post.top){%>
+                <div class="article-pop-out tagcloud">
+                  <i class="icon-tuding"></i>
+                  <a class="article-tag-list-link color3">置顶</a>
+                </div>
+              <% } %>
+              <%- partial('post/tag') %>
+              <%- partial('post/category') %>
+              <% if (index && theme.show_all_link){ %>
+                <p class="article-more-link">
+                  <a class="article-more-a" href="<%- url_for(post.path) %>"><%= theme.show_all_link %> >></a>
+                </p>
+              <% } %>
 
-      <% if (!index && theme.share_jia){ %>
-        <%- partial('post/share') %>
+              <% if (!index && theme.share_jia){ %>
+                <%- partial('post/share') %>
+              <% } %>
+              <div class="clearfix"></div>
+            </div>
+            <% if (!index){ %>
+              <%- partial('post/nav') %>
+            <% } %>
+            <% if (!index && post.comments){ %>
+              <% if (theme.duoshuo){ %>
+              <%- partial('post/duoshuo', {
+                  key: post.slug,
+                  title: post.title,
+                  url: config.url+url_for(post.path)
+                }) %>
+              <% } %>
+
+              <% if (theme.wangyiyun){ %>
+              <%- partial('post/wangyiyun', {
+                  key: post.slug,
+                  title: post.title,
+                  url: config.url+url_for(post.path)
+                }) %>
+              <% } %>
+
+              <% if (theme.changyan_appid && theme.changyan_conf){ %>
+              <%- partial('post/changyan', {
+                  key: post.slug,
+                  title: post.title,
+                  url: config.url+url_for(post.path)
+                }) %>
+              <% } %>
+
+              <% if (theme.hyper_id){ %>
+                <%- partial('post/hyper-comments', {
+                    key: post.slug,
+                    title: post.title,
+                    url: config.url+url_for(post.path)
+                  }) %>
+                <% } %>
+
+              <% if (theme.valine.enable ){ %>
+                <%- partial('post/valine', {
+                    key: post.slug,
+                    title: post.title,
+                    url: config.url+url_for(post.path)
+                  }) %>
+                <% } %>
+
+              <% if (theme.disqus || config.disqus_shortname){ %>
+                <section id="comments">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = '<%= theme.disqus || config.disqus_shortname %>'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </section>
+              <% } %>
+
+              <% if (theme.gitment_owner && theme.gitment_repo &&theme.gitment_oauth && theme.gitment_oauth.client_id && theme.gitment_oauth.client_secret){ %>
+              <%- partial('post/gitment', {
+                  key: post.slug,
+                  title: post.title,
+                  url: config.url+url_for(post.path)
+                }) %>
+              <% } %>
+
+              <% if (theme.isso){ %>
+                <section id="comments">
+                  <section id="isso-thread"></section>
+                  <script data-isso="https://ninesix.cc/isso/"
+                    data-isso-css="true"
+                    data-isso-lang="en"
+                    data-isso-reply-to-self="false"
+                    data-isso-require-author="true"
+                    data-isso-require-email="true"
+                    data-isso-max-comments-top="10"
+                    data-isso-max-comments-nested="5"
+                    data-isso-reveal-on-click="5"
+                    data-isso-avatar="true"
+                    data-isso-avatar-bg="#f0f0f0"
+                    data-isso-avatar-fg="#9abf88 #5698c4 #e279a3 #9163b6 ..."
+                    data-isso-vote="true"
+                    data-vote-levels=""
+                    src="https://ninesix.cc/isso/js/embed.min.js"></script>
+                </section>
+              <% } %>
+
+              <% if (theme.disqusapi.enable){ %>
+                <%- partial('post/disqus-api', {
+                  key: post.slug,
+                  title: post.title,
+                  url: config.url+url_for(post.path)
+                }) %>
+              <% } %>
+
+            <% } %>
+      </div>
+      <% if (!index){ %>
+        <%- partial('toc', { post: post}) %>
       <% } %>
-      <div class="clearfix"></div>
     </div>
   </div>
 </article>
-<% if (!index){ %>
-  <%- partial('post/nav') %>
-<% } %>
 <%- partial('_partial/aside') %>
-
-
-<% if (!index && post.comments){ %>
-  <% if (theme.duoshuo){ %>
-  <%- partial('post/duoshuo', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
-  <% } %>
-
-  <% if (theme.wangyiyun){ %>
-  <%- partial('post/wangyiyun', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
-  <% } %>
-
-  <% if (theme.changyan_appid && theme.changyan_conf){ %>
-  <%- partial('post/changyan', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
-  <% } %>
-
-  <% if (theme.hyper_id){ %>
-    <%- partial('post/hyper-comments', {
-        key: post.slug,
-        title: post.title,
-        url: config.url+url_for(post.path)
-      }) %>
-    <% } %>
-
-  <% if (theme.valine.enable ){ %>
-    <%- partial('post/valine', {
-        key: post.slug,
-        title: post.title,
-        url: config.url+url_for(post.path)
-      }) %>
-    <% } %>
-
-  <% if (theme.disqus || config.disqus_shortname){ %>
-    <section id="comments">
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = '<%= theme.disqus || config.disqus_shortname %>'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </section>
-  <% } %>
-
-  <% if (theme.gitment_owner && theme.gitment_repo &&theme.gitment_oauth && theme.gitment_oauth.client_id && theme.gitment_oauth.client_secret){ %>
-  <%- partial('post/gitment', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
-  <% } %>
-
-  <% if (theme.isso){ %>
-    <section id="comments">
-      <section id="isso-thread"></section>
-      <script data-isso="https://ninesix.cc/isso/"
-        data-isso-css="true"
-        data-isso-lang="en"
-        data-isso-reply-to-self="false"
-        data-isso-require-author="true"
-        data-isso-require-email="true"
-        data-isso-max-comments-top="10"
-        data-isso-max-comments-nested="5"
-        data-isso-reveal-on-click="5"
-        data-isso-avatar="true"
-        data-isso-avatar-bg="#f0f0f0"
-        data-isso-avatar-fg="#9abf88 #5698c4 #e279a3 #9163b6 ..."
-        data-isso-vote="true"
-        data-vote-levels=""
-        src="https://ninesix.cc/isso/js/embed.min.js"></script>
-    </section>
-  <% } %>
-
-  <% if (theme.disqusapi.enable){ %>
-    <%- partial('post/disqus-api', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
-  <% } %>
-
-<% } %>

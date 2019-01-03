@@ -1,3 +1,7 @@
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/velocity/1.5.0/velocity.min.js"></script>
+<script src="https://cdn.bootcss.com/velocity/1.5.0/velocity.ui.min.js"></script>
+<script src="https://cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
 <script>
 <% var left = '<%=' %>
 <% var right = '%' %>
@@ -16,4 +20,3 @@
 	<% for (var asset in compilation.assets) { %><% if (asset.indexOf('slider') >= 0) { %><% var slider = asset %><% } %><% } %>loadScript("<%= left %>config.root<%= right %><%= right2 %><%= slider %>")
 })();
 </script>
-

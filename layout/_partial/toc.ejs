@@ -4,11 +4,16 @@
         })
     if(topic) {
 %>
-    <div id="toc-container"> 
-        <div id="toc"> 
-            <p> 
-                <strong>文章目录</strong>
+    <div id="toc-container">
+        <div id="toc">
+            <p>
+                #文章目录
             </p>
+            <ol class="toc">
+              <li class="toc-item">
+                <a class="toc-link active" href="#title">标题</a>
+              </li>
+            </ol>
         <%- topic %>
         </div>
     </div>

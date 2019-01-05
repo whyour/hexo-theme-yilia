@@ -161,6 +161,11 @@ html, body, #container {
             display: none;
         }
     }
+    .article-content {
+      #toc-container {
+        display: none;
+      }
+    }
     .article-inner h1.article-title, .article-title{
         font-size: 21px;
         font-weight: 300;

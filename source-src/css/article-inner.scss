@@ -1,7 +1,7 @@
 .article-inner {
-	p {
-	    margin: 0 0 0.75em;
-	}
+  p {
+    margin: 0 0 0.75em;
+  }
 }
 
 .article-inner {
@@ -10,45 +10,45 @@
 }
 
 .article-inner h1 {
-	font-size: 1.75rem;
-	line-height: 1.25;
-	margin-top: 2em;
-	margin-bottom: 1em;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .article-inner h2 {
-	font-size: 23px;
-	font-size: 1.4375rem;
-	line-height: 1.2173913043;
-	margin-top: 2.4347826087em;
-	margin-bottom: 1.2173913043em;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 1.2173913043;
+  margin-top: 2.4347826087em;
+  margin-bottom: 1.2173913043em;
 }
 
 .article-inner h3 {
-	font-size: 19px;
-	font-size: 1.1875rem;
-	line-height: 1.1052631579;
-	margin-top: 2.9473684211em;
-	margin-bottom: 1.4736842105em;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.1052631579;
+  margin-top: 2.9473684211em;
+  margin-bottom: 1.4736842105em;
 }
 
 .article-inner h4,
 .article-inner h5,
 .article-inner h6 {
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.3125;
-	margin-top: 3.5em;
-	margin-bottom: 1.75em;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.3125;
+  margin-top: 3.5em;
+  margin-bottom: 1.75em;
 }
 
 .article-inner h4 {
-	letter-spacing: 0.140625em;
-	text-transform: uppercase;
+  letter-spacing: 0.140625em;
+  text-transform: uppercase;
 }
 
 .article-inner h6 {
-	font-style: italic;
+  font-style: italic;
 }
 
 .article-inner h1,
@@ -67,16 +67,16 @@
 .article-inner h4:first-child,
 .article-inner h5:first-child,
 .article-inner h6:first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 
-.article-inner h1:first-child{
+.article-inner h1:first-child {
   display: inline;
   margin-bottom: 0;
 }
+
 .article-entry {
   line-height: 1.8em;
-
   ul.post-copyright {
     margin: 2em 0 0;
     padding: 0.5em 1em;
@@ -84,12 +84,11 @@
     background-color: #f9f9f9;
     list-style: none;
   }
-
-  #toc-container, #toc {
+  #toc-container,
+  #toc {
     float: right;
     background: #fff;
   }
-
   #toc {
     min-width: 120px;
     max-width: 260px;
@@ -99,46 +98,51 @@
     border-width: 1px;
     border-style: solid;
     border-color: rgb(226, 226, 226);
+    -o-border-image: initial;
     border-image: initial;
-
-    ol ol ul, ol ul ul, ul ol ul, ol ol ol, ul ul ul {
+    ol ol ul,
+    ol ul ul,
+    ul ol ul,
+    ol ol ol,
+    ul ul ul {
       list-style-type: square;
     }
-
-    ul ul, ol ul, ul ol, ol ol {
+    ul ul,
+    ol ul,
+    ul ol,
+    ol ol {
       list-style-type: circle;
     }
-
-    > ul:first-of-type , > ol:first-of-type, > li{
+    >ul:first-of-type,
+    >ol:first-of-type,
+    >li {
       list-style-type: disc;
     }
     a.active {
-        color: #f86143;
-        border-left-color: #f86143;
+      color: #f86143;
+      border-left-color: #f86143;
     }
-
     a {
-        display: block;
-        padding: 5px 0 5px 20px;
-        border-left: 2px solid #eee;
-        word-break: keep-all;
-        white-space: nowrap;
-        font-size: 13px;
-        transition: all 1s linear;
+      display: block;
+      padding: 5px 0 5px 20px;
+      border-left: 2px solid #eee;
+      word-break: keep-all;
+      white-space: nowrap;
+      font-size: 13px;
+      -webkit-transition: all 1s linear;
+      transition: all 1s linear;
     }
   }
-
   #toc p {
     padding: 0px 4px;
     margin: 0px;
   }
-
   #toc strong {
     display: block;
     border-bottom: 1px solid rgb(226, 226, 226);
   }
-
-  #toc ul, #toc ol {
+  #toc ul,
+  #toc ol {
     margin: 0.5em 0.5em 0.5em 1.5em;
     li {
       display: list-item;
@@ -148,12 +152,13 @@
       }
     }
   }
-
-  #toc ul ul, #toc ol ol, #toc ol ul, #toc ul ol {
+  #toc ul ul,
+  #toc ol ol,
+  #toc ol ul,
+  #toc ul ol {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   #toc ol {
     li {
       &:before {
@@ -162,17 +167,17 @@
       }
     }
   }
-
-  p{
+  p {
     margin-top: 10px;
     overflow: hidden;
   }
-  p code,li code{
+  p code,
+  li code {
     padding: 1px 3px;
     margin: 0 3px;
     background: #ddd;
     border: 1px solid #ccc;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
     word-wrap: break-word;
     font-size: 14px;
     overflow: hidden;
@@ -183,7 +188,7 @@
     margin-top: 10px;
     border-left: 5px solid #657b83;
     background: #f6f6f6;
-    p{
+    p {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -194,7 +199,7 @@
     overflow: hidden;
   }
   ul:not(.related-list) {
-    li:before{
+    li:before {
       content: "";
       width: 6px;
       height: 6px;
@@ -209,30 +214,32 @@
   }
   ol {
     counter-reset: item;
-    li:before{
+    li:before {
       counter-increment: item;
-	    content: counter(item)".";
+      content: counter(item)".";
       margin-right: 10px;
     }
   }
-  ul,ol{
+  ul,
+  ol {
     font-size: 14px;
     margin: 10px 0px;
   }
-  li{
-    ul,ol{
+  li {
+    ul,
+    ol {
       margin-left: 30px;
-      li:before{
+      li:before {
         content: "";
         background: #dedede;
       }
     }
   }
-  h1{
+  h1 {
     margin-top: 30px;
     overflow: hidden;
   }
-  h2{
+  h2 {
     margin-top: 20px;
     font-weight: bold;
     color: #574C4C;
@@ -240,7 +247,10 @@
     border-bottom: 1px solid #ddd;
     overflow: hidden;
   }
-  h3,h4,h5,h6{
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 20px;
     font-weight: bold;
     color: #574C4C;
@@ -248,7 +258,7 @@
     border-bottom: 1px solid #ddd;
     overflow: hidden;
   }
-  video{
+  video {
     max-width: 100%;
     overflow: hidden;
   }
@@ -256,13 +266,13 @@
     font-weight: bold;
     overflow: hidden;
   }
-  .caption{
+  .caption {
     display: block;
     font-size: 0.8em;
     color: #aaa;
     overflow: hidden;
   }
-  hr{
+  hr {
     height: 0;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -280,46 +290,48 @@
     color: #657b83;
     border: 1px solid #ccc;
     text-shadow: 0 1px #444;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
     overflow: hidden;
-    code{
+    code {
       font-size: 14px;
     }
   }
-  table{
-    width:100%;
+  table {
+    width: 100%;
     border: 1px solid #dedede;
     margin: 15px 0;
-    border-collapse:collapse;
+    border-collapse: collapse;
     overflow: hidden;
-    tr,td{
-      height:35px;
+    tr,
+    td {
+      height: 35px;
       overflow: hidden;
     }
-    thead{
+    thead {
       tr {
         background: #f8f8f8;
       }
     }
-    tbody{
-      tr:hover{
+    tbody {
+      tr:hover {
         background: #efefef;
       }
     }
-    td,th{
+    td,
+    th {
       border: 1px solid #dedede;
       overflow: hidden;
       padding: 0 10px;
     }
   }
-  figure{
+  figure {
     overflow: hidden;
     table {
       border: none;
       width: auto;
       margin: 0;
-      tbody{
-        tr:hover{
+      tbody {
+        tr:hover {
           background: none;
         }
       }
@@ -328,31 +340,51 @@
 }
 
 .article-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   .article-content-main {
-    flex-grow: 1;
+    flex: 1;
   }
   #toc-container {
-    width: 25%;
+    width: 270px;
     position: sticky;
     position: -webkit-sticky;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     top: 78px;
-    padding: 0 50px;
-  }
-  #toc-container a {
-    display: block;
-    color: #000;
-    padding: 5px 0 5px 20px;
-    border-left: 2px solid #eee;
-    word-break: keep-all;
-    white-space: nowrap;
-    font-size: 13px;
-    transition: all 0.8s ease-in-out;
-    &.active, &:hover {
-      color: #f86143;
-      border-left-color: #f86143;
+    // padding: 0 50px;
+    padding-left: 30px;
+    a {
+      display: block;
+      color: #000;
+      padding: 5px 0 5px 10px;
+      border-left: 2px solid #eee;
+      word-break: keep-all;
+      white-space: nowrap;
+      font-size: 13px;
+      -webkit-transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out;
+      &.active,
+      &:hover {
+        color: #f86143;
+        border-left-color: #f86143;
+      }
+    }
+    .toc-child {
+      .toc-level-3 .toc-link{
+        text-indent: 10px;
+      }
+      .toc-level-4 .toc-link {
+        text-indent: 20px;
+      }
+      .toc-level-5 .toc-link {
+        text-indent: 30px;
+      }
+      .toc-level-6 .toc-link {
+        text-indent: 40px;
+      }
     }
   }
 }

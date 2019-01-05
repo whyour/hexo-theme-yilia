@@ -56,7 +56,7 @@ var backTop = function (domE, ctn, distance) {
 
     if (top < 200) {
       $('.toc-link').removeClass('active')
-      $('.toc-child').hide()
+      // $('.toc-child').hide()
     }
     var list = $('.article-content').find('h1,h2,h3,h4,h5,h6')
     var currentId = ''
@@ -78,7 +78,7 @@ var backTop = function (domE, ctn, distance) {
       _this.addClass('active')
       // var parents = _this.parents('.toc-child')
       // if (parents.length > 0) {
-      //   var child
+      //   var child;
       //   parents.length > 1 ? child = parents.eq(parents.length - 1).find('.toc-child') : child = parents
       //   if (child.length > 0 && child.is(':hidden')) {
       //     expandToc(child)

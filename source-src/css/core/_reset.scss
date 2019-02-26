@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-//-----------------------------------------------------  
+//-----------------------------------------------------
 // reset scss
 // 包括normalize，清零重置
 //-----------------------------------------------------
@@ -88,7 +88,7 @@ a {
     background: transparent; // 1
     text-decoration: none;
     color: nth($colorLink, 1);
-    
+
     &:active {
         outline: 0; // 2
     }
@@ -164,8 +164,8 @@ svg:not(:root) {
 pre {
     overflow: auto; // 1
     white-space: pre; // 2
-    white-space: pre-wrap; // 2
-    word-wrap: break-word; // 2
+    // white-space: pre-wrap; // 2
+    // word-wrap: break-word; // 2
 }
 
 // 1. Address odd `em`-unit font size rendering in all browsers.

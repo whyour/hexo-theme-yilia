@@ -39,7 +39,18 @@
 }
 .article-entry .highlight table {
   margin: 0;
-  width: auto;
+  // background-color: transparent;
+  // border: 0;
+  // display: inline;
+  // line-height: inherit;
+  // max-width: auto;
+  // overflow: visible;
+  // padding: 0;
+  // word-wrap: normal;
+  // background: transparent;
+  // font-size: 100%;
+  // white-space: pre;
+  // word-break: normal;
 }
 .article-entry .highlight td {
   border: none;
@@ -62,8 +73,11 @@
   float: right;
 }
 .article-entry .highlight .gutter pre {
-  text-align: right;
-  padding-right: 20px;
+  // text-align: left;
+  // padding-right: 20px;
+  text-align: center;
+  width: 36px;
+  padding-right: 10px;
 }
 .article-entry .highlight .gutter pre .line {
   text-shadow: none;

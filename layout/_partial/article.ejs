@@ -41,6 +41,10 @@
                     <a href="<%= url_for(post.path) %>" title="<%= post.title %>">https:<%= post.permalink %></a>
                   </li>
                   <li class="post-copyright-license">
+                    <strong>最后更新于：</strong>
+                    <time datetime="<%- date_xml(post.updated) %>" itemprop="dateUpdated"><%- full_date(post.updated, 'YYYY年MM月DD日 HH:mm:ss') %></time>
+                  </li>
+                  <li class="post-copyright-license">
                     <strong>版权声明：</strong>
                     本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">署名 4.0 国际（CC BY 4.0）</a> 许可协议。转载请注明出处！
                   </li>

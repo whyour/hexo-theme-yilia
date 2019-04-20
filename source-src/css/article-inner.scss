@@ -349,7 +349,8 @@
     flex: 1;
   }
   #toc-container {
-    width: 400px;
+    width: 19%;
+    min-width: 280px;
     position: sticky;
     position: -webkit-sticky;
     -ms-flex-item-align: start;

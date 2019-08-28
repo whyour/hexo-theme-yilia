@@ -3,14 +3,16 @@
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
-        <% if (!post.noDate){ %>
+        <% if (!post.noDate && index){ %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
         <% } %>
-        <% if (!index){ %>
-          </br>
-          <span class="post-count">本文总共<%= wordcount(post.content) %>字，阅读全文大约需要<%= min2read(post.content) %>分钟</span>
-        <% } %>
       </header>
+      <% if (!index){ %>
+        <span class="post-count">
+          <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
+          本文总共<%= wordcount(post.content) %>字，阅读全文大约需要<%= min2read(post.content) %>分钟
+        </span>
+      <% } %>
     <% } %>
     <div class="article-content">
       <div class="article-content-main">

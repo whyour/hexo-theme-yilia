@@ -91,6 +91,11 @@
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
   &:hover{
     color: #B0A0AA;
   }
@@ -98,9 +103,26 @@
 
 .article-header{
   padding: 10px 0px 5px;
-  .post-count {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    width: calc(100% - 200px);
+  }
+}
+
+.post-count {
+  color: #969696;
+  font-size: 12px;
+  .archive-article-date {
     color: #969696;
     font-size: 12px;
+    margin-right: 5px;
+    time {
+      line-height: normal;
+      i {
+        font-size: 12px;
+      }
+    }
   }
 }
 

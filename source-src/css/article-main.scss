@@ -91,10 +91,12 @@
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  &.article-list-title {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   flex: 1;
   &:hover{
     color: #B0A0AA;
@@ -106,7 +108,7 @@
   display: flex;
   justify-content: space-between;
   h1 {
-    width: calc(100% - 200px);
+    width: calc(100% - 125px);
   }
 }
 

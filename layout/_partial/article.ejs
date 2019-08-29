@@ -2,7 +2,11 @@
   <div class="article-inner">
     <% if (post.link || post.title){ %>
       <header class="article-header">
+        <% if (index){ %>
+        <%- partial('post/title', {class_name: 'article-title article-list-title'}) %>
+        <% } else { %>
         <%- partial('post/title', {class_name: 'article-title'}) %>
+        <% } %>
         <% if (!post.noDate && index){ %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
         <% } %>

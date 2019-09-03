@@ -4,8 +4,11 @@
 }
 #article-nav .article-nav-link-wrap {
   font-size: 14px;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
   .icon-circle-right, .icon-circle-left {
-    padding-top: 2px;
+    padding-top: 3px;
   }
 }
 #article-nav .article-nav-link-wrap .article-nav-title {

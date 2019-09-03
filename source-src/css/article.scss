@@ -321,6 +321,9 @@
       font-size: 12px;
       color: #aaa;
       transition: color 0.3s;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     strong{
       background: #ddd;

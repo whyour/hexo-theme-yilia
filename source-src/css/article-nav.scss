@@ -21,6 +21,9 @@
   display: inline-block;
   font-size: 16px;
   transition: color 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #article-nav .article-nav-link-wrap:hover i {
   color: #4d4d4d;

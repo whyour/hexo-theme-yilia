@@ -8,13 +8,26 @@
 	width: 100%;
 	text-align: center;
 	.outer{
-		padding: 0 30px;
+    padding: 0 30px;
+    #footer-info {
+      display: flex;
+      align-items: center;
+      > div {
+        height: 100%;
+        &:first-child {
+          margin-right: 7px;
+        }
+        &:not(:first-child){
+          padding-top: 4px;
+        }
+      }
+    }
 	}
 }
 .footer-left{
 	float: left;
 	.yiyan {
-		display: none;			
+		display: none;
 		&.show {
 			display: block;
 		}

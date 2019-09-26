@@ -333,6 +333,9 @@ body,
 #footer {
   position: relative;
   bottom: 0;
+  #footer-info {
+    display: block;
+  }
   .footer-left {
     float: initial;
     margin-bottom: 10px;

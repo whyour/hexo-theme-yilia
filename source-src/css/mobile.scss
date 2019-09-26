@@ -333,9 +333,19 @@ body,
 #footer {
   position: relative;
   bottom: 0;
-  #footer-info {
-    display: block !important;
-  }
+  .outer{
+    #footer-info {
+      display: block !important;
+      > div {
+        &:first-child {
+          margin-right: 0;
+        }
+        &:not(:first-child){
+          padding-top: 0;
+        }
+      }
+    }
+	}
   .footer-left {
     float: initial;
     margin-bottom: 10px;

@@ -334,7 +334,7 @@ body,
   position: relative;
   bottom: 0;
   #footer-info {
-    display: block;
+    display: block !important;
   }
   .footer-left {
     float: initial;

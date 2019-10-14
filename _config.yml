@@ -126,7 +126,7 @@ isso: false
 disqusapi:
   enable: true
   forum: 'whyour'
-  site: 'https://ninesix.cc'
+  site: 'https://whyour.cn'
   api: 'https://disqus.ninesix.cc'
   timeout: 2000
   mode: 2

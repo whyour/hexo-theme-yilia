@@ -64,7 +64,7 @@ function regSW() {
     }
 }
 
-regSW();
+// regSW();
 
 module.exports = {
 	init: function() {}

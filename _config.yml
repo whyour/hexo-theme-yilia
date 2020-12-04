@@ -124,7 +124,7 @@ hyper_id: false
 isso: false
 
 disqusapi:
-  enable: false
+  enable: true
   forum: 'whyour'
   site: 'https://whyour.cn'
   api: 'https://disqus.ninesix.cc'
